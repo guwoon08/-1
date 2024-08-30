@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin: 20px;
+}
+
+#imageUpload {
+    margin: 20px;
+}
+
+#puzzle {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    margin: auto;
+    width: 306px;
+    height: 306px;
+    position: relative;
+}
+
+.piece {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border: 1px solid #999;
+    cursor: move;
+    position: absolute;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.piece.empty {
+    background-color: transparent;
+    border: none;
+    cursor: default;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 24px;
+    color: green;
+}
